@@ -23,7 +23,7 @@ class ElectricCar(Car):
         self.battery_capacity = battery_capacity
 
     def print_travelled_distance(self):
-        print(self.travelled_distance)
+        print(f"The traveled distance of the electronic car {self.registration_number} is:{self.travelled_distance} km")
 
 class GasCar(Car):
     def __init__(self,reg_num,max_speed, tank_capacity):
@@ -31,7 +31,7 @@ class GasCar(Car):
         self.tank_capacity = tank_capacity
 
     def print_travelled_distance(self):
-        print(f"The traveled distance of {self.travelled_distance}")
+        print(f"The traveled distance of the gas car {self.registration_number} is:{self.travelled_distance} km")
 
 el_car1 = ElectricCar('ACD-01',180,60.5)
 gas_car1= GasCar('ABC-01',170,35)
